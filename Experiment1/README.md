@@ -20,6 +20,20 @@ The experiment utilizes Pandas for data manipulation, alongside Matplotlib and S
 9.  **Average Experience per Department:** Computing the mean years of experience grouped by department.
 10. **Age Distribution:** Visualizing the demographic age spread through a histogram with KDE.
 
+## Observations
+| Analysis Task | Key Observation Parameter | Visualization/Method |
+| :--- | :--- | :--- |
+| **Departmental Salary** | Mean salary variance across distinct departments | Horizontal Bar Chart |
+| **Employee Distribution** | Workforce concentration per department | Count Plot |
+| **Gender Demographics** | Proportion of male vs female employees | Pie Chart |
+| **Salary Frequency** | Salary spread and common compensation brackets | Histogram with KDE |
+| **Experience & Pay** | Correlation between years worked and compensation | Scatter Plot (Hue: Dept, Style: Gender) |
+| **Top Earners** | Identification of 10 highest-paid employees | Dataframe Extraction (`nlargest`) |
+| **Maximum Salaries** | Peak compensation limits within each department | Groupby Aggregation (`max`) |
+| **Above-Average Base** | Count of employees exceeding organizational mean | Boolean Filtering |
+| **Experience Trends** | Average seniority levels grouped by department | Groupby Aggregation (`mean`) |
+| **Age Spread** | Distribution of workforce age demographics | Histogram with KDE |
+
 ## Result Interpretation & Learnings
 *   **Holistic Data Understanding:** The sequential analytical operations yield a comprehensive view of the employee dataset structures.
 *   **Visual Trend Identification:** Generated visualizations effectively highlight salary disparities across departments and demographic compositions.

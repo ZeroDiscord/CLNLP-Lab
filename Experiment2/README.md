@@ -28,6 +28,16 @@ The experiment operates on raw text files and is divided into three core preproc
     *   Filtering the token list to exclude any words present in the stop words set and ensuring only alphanumeric tokens remain.
     *   Isolating and displaying the specific stop words that were removed from the corpus.
 
+## Observations
+| Preprocessing Stage | Method / Library | Action Performed | Result Output |
+| :--- | :--- | :--- | :--- |
+| **Text Cleaning** | Built-in Python (`string`) | Lowercasing, punctuation/digit removal | Normalized, noise-free text string |
+| **Whitespace Normalization**| Built-in Python (`split`, `join`) | Elimination of redundant spaces | Compressed text corpus |
+| **Tokenization (NLTK)** | `nltk.word_tokenize`, `sent_tokenize`| Rule-based token extraction | Lists of discrete words and sentences |
+| **Tokenization (spaCy)** | `en_core_web_sm` model | Model-based document parsing | Extracted tokens via `.text` attribute |
+| **Tokenization (Native)** | `str.split()`, `re.split()` | Whitespace and regex boundaries | Basic token lists |
+| **Stop Word Removal** | `nltk.corpus.stopwords` | Filtering against standard English list | Alphanumeric tokens with core semantic value |
+
 ## Result Interpretation & Learnings
 *   **Pipeline Foundation:** The experiment practically demonstrates the critical initial phases necessary for natural language processing pipelines.
 *   **Effective Normalization:** The text cleaning stage successfully normalizes raw text by eliminating non-informative characters, including punctuation, digits, and excess whitespace.
