@@ -11,10 +11,10 @@ This repository contains the laboratory experiments conducted for the Computatio
 
 ## Laboratory Experiments
 
-*   **[Experiment 1: Data Analysis](Experiment1/README.md)**
-    Exploratory data analysis on employee records using Pandas, Matplotlib, and Seaborn to uncover demographic and salary distributions.
-*   **[Experiment 2: Basic Text Preprocessing](Experiment2/README.md)**
-    Implementation of core natural language preprocessing pipelines including text cleaning, tokenization, and stop word removal utilizing NLTK and spaCy.
+| Exp No. | Title | Description | Link |
+| :---: | :--- | :--- | :---: |
+| **1** | **Data Analysis** | Exploratory data analysis on employee records using Pandas, Matplotlib, and Seaborn to uncover demographic and salary distributions. | [View Details](Experiment1/README.md) |
+| **2** | **Basic Text Preprocessing** | Implementation of core natural language preprocessing pipelines including text cleaning, tokenization, and stop word removal utilizing NLTK and spaCy. | [View Details](Experiment2/README.md) |
 
 ## Structure
 Each experiment directory contains:
