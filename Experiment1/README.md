@@ -1,0 +1,28 @@
+# Experiment 1: Data Analysis
+
+**Name:** Aantriksh Sood  
+**SAP ID:** 500124259  
+
+## Objective
+To perform exploratory data analysis on a structured dataset to derive meaningful insights using Python data manipulation and visualization libraries.
+
+## Procedure & Implementation
+The experiment utilizes Pandas for data manipulation, alongside Matplotlib and Seaborn for data visualization. The dataset `employee_information_100.csv` is loaded and inspected for structural properties before executing the following analytical tasks:
+
+1.  **Average Salary by Department:** Grouping records by department to compute mean salaries, visualized as a horizontal bar chart.
+2.  **Employee Count per Department:** Calculating the frequency distribution of employees across departments, represented via a count plot.
+3.  **Gender Distribution:** Aggregating gender frequencies and displaying the proportions using a pie chart.
+4.  **Salary Distribution:** Plotting a histogram with Kernel Density Estimation (KDE) to observe the frequency distribution of salary figures.
+5.  **Experience vs. Salary Relationship:** Generating a scatter plot to identify correlations between years of experience and salary, categorized by department and gender.
+6.  **Top 10 Earners:** Extracting the records of the ten employees with the highest salaries.
+7.  **Departmental Maximum Salaries:** Identifying the peak salary figure within each department.
+8.  **Above-Average Earners:** Filtering employees whose salaries exceed the overall mean salary of the organization.
+9.  **Average Experience per Department:** Computing the mean years of experience grouped by department.
+10. **Age Distribution:** Visualizing the demographic age spread through a histogram with KDE.
+
+## Result Interpretation & Learnings
+*   **Holistic Data Understanding:** The sequential analytical operations yield a comprehensive view of the employee dataset structures.
+*   **Visual Trend Identification:** Generated visualizations effectively highlight salary disparities across departments and demographic compositions.
+*   **Variable Correlation:** Scatter plots confirm and illustrate the direct correlation between employee experience and compensation levels.
+*   **Proficiency in Aggregation:** The implementation reinforces practical skills utilizing core Pandas aggregation functions, including `groupby`, `value_counts`, and `nlargest`.
+*   **Data Translation:** The process demonstrates the application of Seaborn and Matplotlib in converting raw tabular data into interpretable visual narratives.
