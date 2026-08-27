@@ -10,22 +10,22 @@ To implement foundational text preprocessing techniques essential for Natural La
 The experiment operates on raw text files and is divided into three core preprocessing stages, leveraging built-in Python string operations, NLTK, and spaCy libraries.
 
 1.  **Text Cleaning (`2.1_text_data.txt`):**
-    *   Reading the raw text file.
-    *   Calculating the frequency of uppercase characters.
-    *   Converting the entire text corpus to lowercase for uniformity.
-    *   Identifying and stripping all punctuation marks using the `string.punctuation` module.
-    *   Removing numeric digits.
-    *   Normalizing whitespace by splitting and rejoining the text, calculating the total whitespace characters removed.
+    *   Reading the raw text file <sup>(`open(file, 'r').read()`)</sup>.
+    *   Calculating the frequency of uppercase characters <sup>(`sum(c.isupper())`)</sup>.
+    *   Converting the entire text corpus to lowercase <sup>(`str.lower()`)</sup> for uniformity.
+    *   Identifying and stripping all punctuation marks using the `string.punctuation` module <sup>(`c not in string.punctuation`)</sup>.
+    *   Removing numeric digits <sup>(`str.isdigit()`)</sup>.
+    *   Normalizing whitespace by splitting and rejoining the text <sup>(`" ".join(str.split())`)</sup>, calculating the total whitespace characters removed.
 
 2.  **Tokenization (`2.2_tokenization_data.txt`):**
-    *   **NLTK:** Utilizing `nltk.word_tokenize` and `nltk.sent_tokenize` for word and sentence level tokenization.
-    *   **spaCy:** Loading the `en_core_web_sm` model to process the text and extract word and sentence tokens via the document object.
-    *   **Python Native:** Implementing basic tokenization using the `split()` method for words and regular expressions (`re.split`) for sentence boundary detection.
+    *   **NLTK:** Utilizing `nltk.word_tokenize` and `nltk.sent_tokenize` for word and sentence level tokenization <sup>(`list`)</sup>.
+    *   **spaCy:** Loading the `en_core_web_sm` model <sup>(`spacy.load()`)</sup> to process the text and extract word and sentence tokens via the document object <sup>(`[t.text for t in doc]`)</sup>.
+    *   **Python Native:** Implementing basic tokenization using the `split()` method for words and regular expressions (`re.split`) <sup>(`re.split(r'(?<=[.!?]) +', text)`)</sup> for sentence boundary detection.
 
 3.  **Stop Words Removal (`2.3_clean_data.txt`):**
-    *   Downloading and importing the English stop words list from `nltk.corpus`.
+    *   Downloading and importing the English stop words list from `nltk.corpus` <sup>(`set(stopwords.words('english'))`)</sup>.
     *   Tokenizing the lowercase input text.
-    *   Filtering the token list to exclude any words present in the stop words set and ensuring only alphanumeric tokens remain.
+    *   Filtering the token list to exclude any words present in the stop words set <sup>(`t not in stop_words`)</sup> and ensuring only alphanumeric tokens remain <sup>(`str.isalnum()`)</sup>.
     *   Isolating and displaying the specific stop words that were removed from the corpus.
 
 ## Observations

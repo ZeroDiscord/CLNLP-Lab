@@ -48,25 +48,25 @@ flowchart TD
 The experiment is structured into three dedicated sections:
 
 1. **Stemming (`Experiment 3.1`):**
-   * Initializing `nltk.stem.PorterStemmer`.
+   * Initializing `nltk.stem.PorterStemmer` <sup>(`PorterStemmer()`)</sup>.
    * Passing the target word corpus: `playing`, `played`, `plays`, `studies`, `studying`, `connected`, `connection`, `computers`.
-   * Applying rule-based suffix stripping to extract the morphological root (stem).
+   * Applying rule-based suffix stripping to extract the morphological root (stem) <sup>(`stemmer.stem(word)`)</sup>.
    * Displaying the original words mapped against their corresponding stems.
 
 2. **Lemmatization (`Experiment 3.2`):**
-   * Initializing `nltk.stem.WordNetLemmatizer` with WordNet corpus support.
+   * Initializing `nltk.stem.WordNetLemmatizer` with WordNet corpus support <sup>(`WordNetLemmatizer()`)</sup>.
    * Processing input words: `cats`, `dogs`, `running`, `runs`, `ran`, `studies`, `studying`, `better`, `children`, `mice`, `went`, `ate`, `leaves`, `caring`.
-   * Incorporating Part-of-Speech (POS) tags to guide morphological resolution for nouns, verbs, and adjectives.
+   * Incorporating Part-of-Speech (POS) tags to guide morphological resolution for nouns, verbs, and adjectives <sup>(`lemmatizer.lemmatize(word, pos)`)</sup>.
    * Producing canonical dictionary base forms (lemmas) for irregular inflections and plurals.
 
 3. **Information Extraction with Regular Expressions (`Experiment 3.3`):**
-   * Defining modular regex patterns for distinct entity classes:
+   * Defining modular regex patterns for distinct entity classes <sup>(`import re`)</sup>:
      * **Email addresses:** `\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b`
      * **URLs:** `https?://[^\s]+|\bwww\.[^\s]+\b`
      * **Mobile numbers:** `(?:\+91[-\s]?)?[6-9]\d{9}`
      * **Hashtags:** `#[A-Za-z0-9_]+`
      * **Mentions:** `(?<!\S)@[A-Za-z0-9_]+`
-   * Executing extraction across unstructured workshop text using `re.findall()`.
+   * Executing extraction across unstructured workshop text using `re.findall()` <sup>(`re.findall(pattern, text)`)</sup>.
    * Isolating and formatting extracted entities.
 
 ## Observations

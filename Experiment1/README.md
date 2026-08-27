@@ -9,16 +9,16 @@ To perform exploratory data analysis on a structured dataset to derive meaningfu
 ## Procedure & Implementation
 The experiment utilizes Pandas for data manipulation, alongside Matplotlib and Seaborn for data visualization. The dataset `employee_information_100.csv` is loaded and inspected for structural properties before executing the following analytical tasks:
 
-1.  **Average Salary by Department:** Grouping records by department to compute mean salaries, visualized as a horizontal bar chart.
-2.  **Employee Count per Department:** Calculating the frequency distribution of employees across departments, represented via a count plot.
-3.  **Gender Distribution:** Aggregating gender frequencies and displaying the proportions using a pie chart.
-4.  **Salary Distribution:** Plotting a histogram with Kernel Density Estimation (KDE) to observe the frequency distribution of salary figures.
-5.  **Experience vs. Salary Relationship:** Generating a scatter plot to identify correlations between years of experience and salary, categorized by department and gender.
-6.  **Top 10 Earners:** Extracting the records of the ten employees with the highest salaries.
-7.  **Departmental Maximum Salaries:** Identifying the peak salary figure within each department.
-8.  **Above-Average Earners:** Filtering employees whose salaries exceed the overall mean salary of the organization.
-9.  **Average Experience per Department:** Computing the mean years of experience grouped by department.
-10. **Age Distribution:** Visualizing the demographic age spread through a histogram with KDE.
+1.  **Average Salary by Department:** Grouping records by department <sup>(`df.groupby()`)</sup> to compute mean salaries <sup>(`mean()`)</sup>, visualized as a horizontal bar chart <sup>(`plot(kind="barh")`)</sup>.
+2.  **Employee Count per Department:** Calculating the frequency distribution <sup>(`value_counts()`)</sup> of employees across departments, represented via a count plot <sup>(`sns.countplot()`)</sup>.
+3.  **Gender Distribution:** Aggregating gender frequencies and displaying the proportions using a pie chart <sup>(`plt.pie()`)</sup>.
+4.  **Salary Distribution:** Plotting a histogram with Kernel Density Estimation (KDE) <sup>(`sns.histplot(kde=True)`)</sup> to observe the frequency distribution of salary figures <sup>(`Series`)</sup>.
+5.  **Experience vs. Salary Relationship:** Generating a scatter plot <sup>(`sns.scatterplot()`)</sup> to identify correlations between years of experience and salary, categorized by department and gender.
+6.  **Top 10 Earners:** Extracting the records of the ten employees with the highest salaries <sup>(`nlargest()`, `DataFrame`)</sup>.
+7.  **Departmental Maximum Salaries:** Identifying the peak salary figure within each department <sup>(`groupby().max()`)</sup>.
+8.  **Above-Average Earners:** Filtering employees whose salaries exceed the overall mean salary <sup>(`df[df['Salary'] > df['Salary'].mean()]`)</sup> of the organization.
+9.  **Average Experience per Department:** Computing the mean years of experience grouped by department <sup>(`groupby().mean()`)</sup>.
+10. **Age Distribution:** Visualizing the demographic age spread through a histogram with KDE <sup>(`sns.histplot()`)</sup>.
 
 ## Observations
 | Analysis Task | Key Observation Parameter | Visualization/Method |
