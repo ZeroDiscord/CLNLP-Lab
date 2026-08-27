@@ -16,6 +16,7 @@ This repository contains the laboratory experiments conducted for the Computatio
 | **1** | **Data Analysis** | Exploratory data analysis on employee records using Pandas, Matplotlib, and Seaborn to uncover demographic and salary distributions. | [View Details](Experiment1/README.md) |
 | **2** | **Basic Text Preprocessing** | Implementation of core natural language preprocessing pipelines including text cleaning, tokenization, and stop word removal utilizing NLTK and spaCy. | [View Details](Experiment2/README.md) |
 | **3** | **Stemming, Lemmatization and Regular Expression** | Implementation of rule-based stemming (Porter), vocabulary-based lemmatization (WordNet), and pattern extraction using Regular Expressions. | [View Details](Experiment3/README.md) |
+| **4** | **Term Frequency and NER** | Implementation of Term-Frequency, TF-IDF, and Named Entity Recognition using both NLP toolkits and native Python from-scratch approaches. | [View Details](Experiment4/README.md) |
 
 ## Structure
 Each experiment directory contains:
