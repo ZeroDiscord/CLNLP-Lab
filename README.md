@@ -17,6 +17,7 @@ This repository contains the laboratory experiments conducted for the Computatio
 | **2** | **Basic Text Preprocessing** | Implementation of core natural language preprocessing pipelines including text cleaning, tokenization, and stop word removal utilizing NLTK and spaCy. | [View Details](Experiment2/README.md) |
 | **3** | **Stemming, Lemmatization and Regular Expression** | Implementation of rule-based stemming (Porter), vocabulary-based lemmatization (WordNet), and pattern extraction using Regular Expressions. | [View Details](Experiment3/README.md) |
 | **4** | **Term Frequency and NER** | Implementation of Term-Frequency, TF-IDF, and Named Entity Recognition using both NLP toolkits and native Python from-scratch approaches. | [View Details](Experiment4/README.md) |
+| **5** | **Subword Tokenization and POS Tagging** | Implementation of advanced tokenization using BPE and SentencePiece (pretrained and from scratch), followed by Part-of-Speech analysis. | [View Details](Experiment5/README.md) |
 
 ## Structure
 Each experiment directory contains:
